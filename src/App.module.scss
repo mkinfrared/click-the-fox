@@ -1,0 +1,19 @@
+.App {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+
+  main {
+    background-color: lemonchiffon;
+    display: flex;
+    flex-direction: column;
+    height: 760px;
+    padding: 20px;
+    width: 660px;
+
+    .heading {
+      text-align: center;
+    }
+  }
+}

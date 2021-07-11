@@ -1,0 +1,21 @@
+.UserForm {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 20px;
+
+  div {
+
+    &:last-child {
+      margin-top: auto;
+    }
+
+    .username {
+      cursor: pointer;
+    }
+  }
+}
+
+.Story {
+}

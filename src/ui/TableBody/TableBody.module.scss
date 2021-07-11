@@ -1,0 +1,28 @@
+@import "../TableHead/TableHead.module";
+
+.TableBody {
+
+  tr {
+    background-color: #c5c5c5;
+
+    &:nth-child(2n) {
+      background-color: #f0f0f0;
+    }
+
+    td {
+      padding: 0 5px;
+
+      &:first-child {
+        @extend %thead;
+        text-align: center;
+      }
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.Story {
+}

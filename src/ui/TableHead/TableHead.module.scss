@@ -1,0 +1,18 @@
+%thead {
+  background-color: #a5a5a5;
+  color: var(--text-secondary);
+  padding: 5px;
+}
+
+.TableHead {
+
+  tr {
+
+    th {
+      @extend %thead;
+    }
+  }
+}
+
+.Story {
+}

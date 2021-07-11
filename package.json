@@ -1,0 +1,104 @@
+{
+  "name": "click-the-fox",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-content-loader": "^6.0.3",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/node-logger": "^6.3.4",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.4",
+    "@types/react-redux": "7.1.18",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "babel-loader": "8.1.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-no-async-without-await": "^1.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
+    "sass": "^1.35.2",
+    "standard-version": "^9.3.0",
+    "stylelint": "^13.13.1",
+    "stylelint-no-unsupported-browser-features": "^5.0.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "prepare": "husky install"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 3 safari version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}
